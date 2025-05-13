@@ -31,27 +31,35 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.RefreshButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 12);
+            this.dataGridView1.GridColor = System.Drawing.Color.SlateGray;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 43);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(779, 372);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(885, 358);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 390);
+            this.button1.Location = new System.Drawing.Point(10, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 36);
             this.button1.TabIndex = 1;
@@ -61,31 +69,21 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(556, 390);
+            this.button2.Location = new System.Drawing.Point(782, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 36);
             this.button2.TabIndex = 2;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(675, 390);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 36);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RefreshButton
             // 
-            this.RefreshButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.RefreshButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.RefreshButton.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefreshButton.Location = new System.Drawing.Point(131, 390);
+            this.RefreshButton.Location = new System.Drawing.Point(129, 417);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(113, 36);
             this.RefreshButton.TabIndex = 4;
@@ -93,14 +91,28 @@
             this.RefreshButton.UseVisualStyleBackColor = false;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Syne", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsStudManagement.Properties.Resources._360_F_1255733784_GtJtB6OKkde7aOgqRAmvd1XQ4RBqs2U5;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(907, 466);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.RefreshButton);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -109,6 +121,7 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,7 +130,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button RefreshButton;
+        private System.Windows.Forms.Label label1;
     }
 }

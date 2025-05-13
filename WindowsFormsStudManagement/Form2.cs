@@ -29,20 +29,12 @@ namespace WindowsFormsStudManagement
             
             BindGridView();
 
-            //SqlConnection con = new SqlConnection(cs);
-
-            //string query = "INSERT INTO KWemployee VALUES(@id, @name, @role, @gender)";
-            //SqlCommand cmd = new SqlCommand(query, con);
-
-            //cmd.Parameters.AddWithValue("@id",);
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             InsertForm insertForm = new InsertForm();
-            insertForm.Show();
+            insertForm.ShowDialog();
         }
 
         void BindGridView()
@@ -55,11 +47,45 @@ namespace WindowsFormsStudManagement
             sda.Fill(dataTable);
 
             dataGridView1.DataSource = dataTable;
+
+            if (dataTable.Rows.Count == 0 )
+            {
+                label1.Visible = true;
+                label1.Text = "*No Employees registered";
+            }
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
         {
             BindGridView();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EditForm editForm = new EditForm();
+            editForm.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        void EmptyLabel()
+        {
+            if(dataGridView1.RowCount == 0)
+            {
+                label1.Visible = true;
+                label1.Text = "*No Employees registered";
+            }
+            else
+            {
+                BindGridView();
+            }
         }
     }
 }

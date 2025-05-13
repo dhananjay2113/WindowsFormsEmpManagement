@@ -42,10 +42,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(259, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 24);
+            this.label1.Size = new System.Drawing.Size(33, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -66,42 +67,46 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(259, 142);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(259, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
+            this.label2.Size = new System.Drawing.Size(72, 28);
             this.label2.TabIndex = 5;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(259, 170);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(259, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 24);
+            this.label3.Size = new System.Drawing.Size(59, 28);
             this.label3.TabIndex = 6;
             this.label3.Text = "Role";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Syne", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(259, 198);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(259, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 24);
+            this.label4.Size = new System.Drawing.Size(86, 28);
             this.label4.TabIndex = 7;
             this.label4.Text = "Gender";
             // 
             // InsertButton
             // 
-            this.InsertButton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InsertButton.Location = new System.Drawing.Point(333, 238);
+            this.InsertButton.BackColor = System.Drawing.Color.LightSalmon;
+            this.InsertButton.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.InsertButton.Location = new System.Drawing.Point(322, 277);
             this.InsertButton.Name = "InsertButton";
-            this.InsertButton.Size = new System.Drawing.Size(110, 33);
+            this.InsertButton.Size = new System.Drawing.Size(110, 45);
             this.InsertButton.TabIndex = 8;
             this.InsertButton.Text = "Insert";
-            this.InsertButton.UseVisualStyleBackColor = true;
+            this.InsertButton.UseVisualStyleBackColor = false;
             this.InsertButton.Click += new System.EventHandler(this.InsertButton_Click);
             // 
             // RolecomboBox
@@ -112,7 +117,7 @@
             "Finance",
             "IT",
             "Marketing"});
-            this.RolecomboBox.Location = new System.Drawing.Point(359, 173);
+            this.RolecomboBox.Location = new System.Drawing.Point(359, 179);
             this.RolecomboBox.Name = "RolecomboBox";
             this.RolecomboBox.Size = new System.Drawing.Size(121, 24);
             this.RolecomboBox.TabIndex = 9;
@@ -123,7 +128,7 @@
             this.GendercomboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GendercomboBox.Location = new System.Drawing.Point(359, 201);
+            this.GendercomboBox.Location = new System.Drawing.Point(359, 214);
             this.GendercomboBox.Name = "GendercomboBox";
             this.GendercomboBox.Size = new System.Drawing.Size(121, 24);
             this.GendercomboBox.TabIndex = 10;
@@ -132,6 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsStudManagement.Properties.Resources.gradient_luxury_gold_light_background_abstract_343694_3883;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.GendercomboBox);
             this.Controls.Add(this.RolecomboBox);

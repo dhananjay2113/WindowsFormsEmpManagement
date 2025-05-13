@@ -24,16 +24,15 @@ namespace WindowsFormsStudManagement
             {
                 if(PassTextBox.Text == "12345")
                 {
-                    
+                    Form1 pass = new Form1();   
+                    pass.Hide();
                     Form2 form2 = new Form2();
-                    
-                    form2.Show();
-                    
+                    form2.ShowDialog();
                 }
                 else
                 {
                     MessageBox.Show("Wrong password");
-                    this.Close();
+                    
                 }
             }
             else

@@ -118,13 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="modern-flowing-orange-wave-banner-background_1035-19860" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\modern-flowing-orange-wave-banner-background_1035-19860.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gradient-luxury-gold-light-background-abstract_343694-3883" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gradient-luxury-gold-light-background-abstract_343694-3883.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="360_F_1255733784_GtJtB6OKkde7aOgqRAmvd1XQ4RBqs2U5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\360_F_1255733784_GtJtB6OKkde7aOgqRAmvd1XQ4RBqs2U5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modern-flowing-orange-wave-banner-background_1035-19860" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modern-flowing-orange-wave-banner-background_1035-19860.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

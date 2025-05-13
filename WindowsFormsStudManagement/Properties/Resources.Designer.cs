@@ -73,9 +73,29 @@ namespace WindowsFormsStudManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gradient_luxury_gold_light_background_abstract_343694_3883 {
+            get {
+                object obj = ResourceManager.GetObject("gradient-luxury-gold-light-background-abstract_343694-3883", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Microsoft_Surface_Duo_2_Dark_Mode_4K_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Microsoft_Surface_Duo_2_Dark_Mode_4K_Wallpaper1 {
+            get {
+                object obj = ResourceManager.GetObject("Microsoft-Surface-Duo-2-Dark-Mode-4K-Wallpaper1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

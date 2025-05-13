@@ -29,37 +29,50 @@ namespace WindowsFormsStudManagement
         private void InsertButton_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(cs);
-            string query2 = "SELECT * FROM KWemploye WHERE VALUES (@id = id)"
-
-            if (IDtextBox.Text != "" && NametextBox.Text != "" && RolecomboBox.Text != "" && GendercomboBox.Text != "")
+            string query2 = "SELECT * FROM KWemployee WHERE @id = id";
+            SqlCommand cmd = new SqlCommand(query2, connection);
+            cmd.Parameters.AddWithValue("@id", IDtextBox.Text);
+            connection.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows == true)
             {
-                SqlConnection conn = new SqlConnection(cs);
-                string query = "INSERT INTO KWemployee VALUES(@id, @name, @role, @gender)";
-                SqlCommand command = new SqlCommand(query, conn);
-
-                command.Parameters.AddWithValue("@id", IDtextBox.Text);
-                command.Parameters.AddWithValue("@name", NametextBox.Text);
-                command.Parameters.AddWithValue("@role", RolecomboBox.SelectedItem);
-                command.Parameters.AddWithValue("@gender", GendercomboBox.SelectedItem);
-
-                conn.Open();
-                int a = command.ExecuteNonQuery();
-                if (a > 0)
-                {
-                    MessageBox.Show("Inserted Succesfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Task Failed", "Failure!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                conn.Close();
-
-                this.Close();
+                MessageBox.Show(IDtextBox.Text + "ID already exists", "Alert!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                connection.Close();
             }
             else
             {
-                MessageBox.Show("Please fill all Fields");
+                connection.Close();
+                if (IDtextBox.Text != "" && NametextBox.Text != "" && RolecomboBox.Text != "" && GendercomboBox.Text != "")
+                {
+                    SqlConnection conn = new SqlConnection(cs);
+                    string query = "INSERT INTO KWemployee VALUES(@id, @name, @role, @gender)";
+                    SqlCommand command = new SqlCommand(query, conn);
+
+                    command.Parameters.AddWithValue("@id", IDtextBox.Text);
+                    command.Parameters.AddWithValue("@name", NametextBox.Text);
+                    command.Parameters.AddWithValue("@role", RolecomboBox.SelectedItem);
+                    command.Parameters.AddWithValue("@gender", GendercomboBox.SelectedItem);
+
+                    conn.Open();
+                    int a = command.ExecuteNonQuery();
+                    if (a > 0)
+                    {
+                        MessageBox.Show("Inserted Succesfully", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Task Failed", "Failure!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    conn.Close();
+
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Please fill all Fields");
+                }
             }
         }
     }
